@@ -21,7 +21,7 @@ public class CookieServlet extends HttpServlet {
 		Cookie[] cookieArray = request.getCookies();
 		String customCookie = null;
 		PrintWriter out = response.getWriter();
-		
+		System.out.println("doGet");
 		if(cookieArray != null){
 			for(int i = 0 ; i < cookieArray.length; i++){
 				out.print("Cookies in Array: "+cookieArray[i]);
